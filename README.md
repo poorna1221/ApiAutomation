@@ -2,17 +2,6 @@
 
 RestAPI automation to get Current Weather Data based on Latitude and Longitude as well as based on Postcode.
 
-### Prerequisites
-
-●   I assume following software's are installed on the machine where this project will be executed.
-
-●	Postman
-●	Node.js
-●	Npm (command to install npm[npm install -g npm])
-●	Newman (command to install newman[npm install -g newman])
-●	Newman html extra reports (command to install npm[npm install -g newman-reporter-htmlextra])
-●	Powershell
-
 ## Running the tests
 
 ●	Right click on ExecuteWeatherAPIs.ps1 file which is located inside QantasApiAutomation folder->Run with Power shell
@@ -32,5 +21,21 @@ RestAPI automation to get Current Weather Data based on Latitude and Longitude a
 ●	Provide 1,2 or 3 to select respective environment.
 
 ●	Program take around 10 seconds and reports will be stored in newman folder, and also report will be opened automatically for easy of access to user.
+
+
+### Prerequisites
+
+●   I assume following software's are installed on the machine where this project will be executed.
+
+●	Postman
+●	Node.js
+●	Npm (command to install npm[npm install -g npm])
+●	Newman (command to install newman[npm install -g newman])
+●	Newman html extra reports (command to install npm[npm install -g newman-reporter-htmlextra])
+●	Powershell
+
+#### Role Applied at Qantas
+
+Senior QA Automation Engineer
 
 
