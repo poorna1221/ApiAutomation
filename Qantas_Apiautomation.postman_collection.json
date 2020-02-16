@@ -1,0 +1,126 @@
+ {
+	"variables": [],
+	"info": {
+		"name": "Qantas_QAChallenge",
+		"_postman_id": "d03ea7fd-42b2-6567-37f0-2ba8ab842a90",
+		"description": "This is the QA Challenge provided the Qantas Loyalty team. The challenge is Create an automated regression for the below ACs using Newman.\n\nAC1\n\nI want to get Current Weather Data for multiple places in the world based on Lat and Lon\n\nAC2\n\nI want to get Current Weather Data for multiple places in the world based on PostCode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Current Weather Data based on provided Latitude and Longitude",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": {
+					"raw": "{{URL}}?lat={{latitude}}&lon={{longitude}}&key={{APIKey}}",
+					"host": [
+						"{{URL}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "{{latitude}}",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "lon",
+							"value": "{{longitude}}",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "AC1. I want to get Current Weather Data for multiple places in the world based on Lat and Lon"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Current Weather Data based on PostCode",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": {
+					"raw": "{{URL}}?postal_code={{PostCode}}&country={{CountryCode}}&key={{APIKey}}",
+					"host": [
+						"{{URL}}"
+					],
+					"query": [
+						{
+							"key": "postal_code",
+							"value": "{{PostCode}}",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "country",
+							"value": "{{CountryCode}}",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Key",
+						"value": "a2254c28161840da8dcc4a742352b309",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "postal_code",
+						"value": "27601",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "country",
+						"value": "US",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": "I want to get Current Weather Data for multiple places in the world based on PostCode"
+			},
+			"response": []
+		}
+	]
+}

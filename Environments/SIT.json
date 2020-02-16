@@ -1,0 +1,17 @@
+ {
+  "id": "48af821a-0949-6266-b6f2-716e2ab05342",
+  "name": "Production",
+  "values": [
+    {
+      "key": "URL",
+      "value": "https://api.weatherbit.io/v2.0/current",
+      "description": "",
+      "type": "text",
+      "enabled": true
+    }
+  ],
+  "timestamp": 1579603567862,
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2020-01-21T11:14:11.597Z",
+  "_postman_exported_using": "Postman/5.5.4"
+}
