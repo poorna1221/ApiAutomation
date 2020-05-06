@@ -2,7 +2,7 @@ node{
     
     stage('Checkout')
     {
-        echo "Checkout Done"
+        echo "Checkout Done From GitHub"
     }
     
     
@@ -25,7 +25,7 @@ node{
     
     stage('ProdDeployment')
     {
-           echo "Deployed to production"
+           echo "Deployed to production From GitHub"
     }
 }
     
