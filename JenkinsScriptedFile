@@ -1,0 +1,31 @@
+node{
+    
+    stage('Checkout')
+    {
+        echo "Checkout Done"
+    }
+    
+    
+    stage('build')
+    {
+         echo "build triggered"
+    }
+    
+    
+    stage('Static code analysis')
+    {
+        echo "Static code analysis completed"
+    }
+    
+    
+    stage('UnitTesting')
+    {
+         echo "UnitTesting testcases executed"
+    }
+    
+    stage('ProdDeployment')
+    {
+           echo "Deployed to production"
+    }
+}
+    
