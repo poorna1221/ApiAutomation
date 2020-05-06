@@ -2,7 +2,7 @@ pipeline{
     
     stage('Checkout')
     {
-        echo "Checkout Done From GitHub"
+        echo "Checkout Done From GitHub pipeline"
     }
     
     
