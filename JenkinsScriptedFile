@@ -2,7 +2,7 @@ node{
     
     stage('Checkout')
     {
-        echo "Checkout Done From GitHub pipeline"
+        echo "Checkout Done From GitHub pipeline email"
     }
     
     
