@@ -8,7 +8,9 @@ node{
     
     stage('build')
     {
-         echo "build triggered"
+          dir('D:\\LearningTools\\Eclipse\\JavaEclipseWorkspace\\WooliesXCodeChallenge') {
+   bat label: '', script: 'mvn test'
+   emailext body: 'Hi Poonra Pipeline Test', subject: 'HI', to: 'poornachandrarao.948@gmail.com'
     }
     
     
